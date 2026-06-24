@@ -1,0 +1,216 @@
+.sell-page {
+  min-height: 100vh;
+  transition: .3s ease;
+}
+
+/* THEMES */
+
+.sell-page.dark {
+  background: #050505;
+  color: white;
+}
+
+.sell-page.light {
+  background: white;
+  color: #111;
+}
+
+/* NAVBAR */
+
+.sell-navbar {
+
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+
+  backdrop-filter: blur(15px);
+
+  z-index: 100;
+}
+
+.sell-page.dark .sell-navbar {
+
+  background:
+    rgba(5,5,5,.75);
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.08);
+}
+
+.sell-page.light .sell-navbar {
+
+  background:
+    rgba(255,255,255,.75);
+
+  border-bottom:
+    1px solid
+    rgba(0,0,0,.08);
+}
+
+/* BACK BUTTON */
+
+.back-btn {
+
+  background: transparent;
+
+  padding: 10px 18px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.sell-page.dark .back-btn {
+
+  border:
+    1px solid #5c7cff;
+
+  color:
+    #5c7cff;
+}
+
+.sell-page.light .back-btn {
+
+  border:
+    1px solid #d4af37;
+
+  color:
+    #d4af37;
+}
+
+/* HERO */
+
+.sell-hero {
+
+  text-align: center;
+
+  padding: 80px 20px;
+}
+
+.sell-hero h2 {
+
+  font-size: 3rem;
+
+  margin-bottom: 20px;
+}
+
+.sell-hero p {
+
+  max-width: 700px;
+
+  margin: auto;
+
+  opacity: .8;
+
+  line-height: 1.8;
+}
+
+/* FORM */
+
+.sell-form-container {
+
+  display: flex;
+
+  justify-content: center;
+
+  padding: 50px;
+}
+
+.sell-form {
+
+  width: 800px;
+
+  max-width: 95%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+
+  padding: 40px;
+
+  border-radius: 24px;
+}
+
+.sell-page.dark .sell-form {
+
+  background: #111;
+}
+
+.sell-page.light .sell-form {
+
+  background: #f8f8f8;
+}
+
+.sell-form input,
+.sell-form select,
+.sell-form textarea {
+
+  padding: 16px;
+
+  border-radius: 14px;
+
+  border: none;
+
+  font-size: 1rem;
+}
+
+.sell-page.dark input,
+.sell-page.dark select,
+.sell-page.dark textarea {
+
+  background: #1b1b1b;
+
+  color: white;
+}
+
+.sell-page.light input,
+.sell-page.light select,
+.sell-page.light textarea {
+
+  background: white;
+
+  color: black;
+}
+
+.submit-btn {
+
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.sell-page.dark .submit-btn {
+
+  background: #5c7cff;
+}
+
+.sell-page.light .submit-btn {
+
+  background: #d4af37;
+}
+
+.submit-btn:hover {
+
+  transform:
+    translateY(-3px);
+}

@@ -1,0 +1,216 @@
+.create-review-page {
+  min-height: 100vh;
+  transition: .3s ease;
+}
+
+/* THEMES */
+
+.create-review-page.dark {
+  background: #050505;
+  color: white;
+}
+
+.create-review-page.light {
+  background: white;
+  color: #111;
+}
+
+/* NAVBAR */
+
+.review-navbar {
+
+  position: sticky;
+  top: 0;
+
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+
+  backdrop-filter: blur(15px);
+}
+
+.create-review-page.dark
+.review-navbar {
+
+  background:
+    rgba(5,5,5,.75);
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.08);
+}
+
+.create-review-page.light
+.review-navbar {
+
+  background:
+    rgba(255,255,255,.75);
+
+  border-bottom:
+    1px solid
+    rgba(0,0,0,.08);
+}
+
+/* BUTTON */
+
+.back-btn {
+
+  background: transparent;
+
+  padding: 10px 18px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.create-review-page.dark
+.back-btn {
+
+  border:
+    1px solid #5c7cff;
+
+  color:
+    #5c7cff;
+}
+
+.create-review-page.light
+.back-btn {
+
+  border:
+    1px solid #d4af37;
+
+  color:
+    #d4af37;
+}
+
+/* HERO */
+
+.create-review-hero {
+
+  text-align: center;
+
+  padding: 80px 20px;
+}
+
+.create-review-hero h2 {
+
+  font-size: 3rem;
+
+  margin-bottom: 15px;
+}
+
+.create-review-hero p {
+
+  opacity: .8;
+}
+
+/* FORM */
+
+.review-form-wrapper {
+
+  display: flex;
+
+  justify-content: center;
+
+  padding: 50px;
+}
+
+.review-form {
+
+  width: 800px;
+
+  max-width: 95%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+
+  padding: 40px;
+
+  border-radius: 24px;
+}
+
+.create-review-page.dark
+.review-form {
+
+  background: #111;
+}
+
+.create-review-page.light
+.review-form {
+
+  background: #f8f8f8;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+
+  padding: 16px;
+
+  border-radius: 14px;
+
+  border: none;
+
+  font-size: 1rem;
+}
+
+.create-review-page.dark input,
+.create-review-page.dark select,
+.create-review-page.dark textarea {
+
+  background: #1b1b1b;
+
+  color: white;
+}
+
+.create-review-page.light input,
+.create-review-page.light select,
+.create-review-page.light textarea {
+
+  background: white;
+
+  color: black;
+}
+
+.submit-btn {
+
+  border: none;
+
+  border-radius: 14px;
+
+  padding: 16px;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.create-review-page.dark
+.submit-btn {
+
+  background: #5c7cff;
+}
+
+.create-review-page.light
+.submit-btn {
+
+  background: #d4af37;
+}
+
+.submit-btn:hover {
+
+  transform:
+    translateY(-3px);
+}
